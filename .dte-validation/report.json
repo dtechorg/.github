@@ -1,0 +1,62 @@
+{
+  "schema": "https://schemas.deep-tree-echo.org/dte.repository-validation-report/v1",
+  "repository": ".github",
+  "checks_total": 10,
+  "checks_passed": 10,
+  "source_manifests": 0,
+  "identity_graphs": 0,
+  "failures": [],
+  "passed": true,
+  "checks": [
+    {
+      "name": "repository-foundation",
+      "passed": true,
+      "detail": "all required foundation files present"
+    },
+    {
+      "name": "subsystem-schema",
+      "passed": true,
+      "detail": "schema: must be declared"
+    },
+    {
+      "name": "subsystem-organization",
+      "passed": true,
+      "detail": "organization: must be declared"
+    },
+    {
+      "name": "subsystem-repository",
+      "passed": true,
+      "detail": "repository: must be declared"
+    },
+    {
+      "name": "subsystem-purpose",
+      "passed": true,
+      "detail": "purpose: must be declared"
+    },
+    {
+      "name": "subsystem-future_enterprise_org",
+      "passed": true,
+      "detail": "future_enterprise_org: must be declared"
+    },
+    {
+      "name": "subsystem-contract_source",
+      "passed": true,
+      "detail": "contract_source: must be declared"
+    },
+    {
+      "name": "subsystem-artifact_policy",
+      "passed": true,
+      "detail": "artifact_policy: must be declared"
+    },
+    {
+      "name": "subsystem-source_import_policy",
+      "passed": true,
+      "detail": "source_import_policy: must be declared"
+    },
+    {
+      "name": "subsystem-license_policy",
+      "passed": true,
+      "detail": "license_policy: must be declared"
+    }
+  ]
+}
