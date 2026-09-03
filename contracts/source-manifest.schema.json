@@ -25,8 +25,12 @@
       "format": "uri"
     },
     "source_head": {
-      "type": "string",
-      "pattern": "^[0-9a-f]{40}$"
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{40}$",
+      "description": "Resolved source commit SHA; null only when the registered source repository has no commits."
     },
     "imported_head": {
       "type": [
