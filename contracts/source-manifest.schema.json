@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.deep-tree-echo.org/dte.source-manifest/v1",
+  "title": "Deep Tree Echo Source Manifest",
+  "type": "object",
+  "required": [
+    "schema",
+    "source_repo",
+    "source_url",
+    "source_head",
+    "import_mode",
+    "destination_prefix",
+    "license_status"
+  ],
+  "properties": {
+    "schema": {
+      "const": "https://schemas.deep-tree-echo.org/dte.source-manifest/v1"
+    },
+    "source_repo": {
+      "type": "string",
+      "pattern": "^[^/]+/[^/]+$"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_head": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "imported_head": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "import_mode": {
+      "enum": [
+        "transfer",
+        "preserved_history_import",
+        "subtree_import",
+        "reference_only",
+        "archive"
+      ]
+    },
+    "destination_prefix": {
+      "type": "string",
+      "pattern": "^sources/[^/]+/[^/]+$"
+    },
+    "canonical_status": {
+      "type": "string"
+    },
+    "license_status": {
+      "type": "string"
+    },
+    "license_gate": {
+      "enum": [
+        "review_required",
+        "preserve_and_verify",
+        "cleared"
+      ]
+    },
+    "source_digest": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "provenance_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

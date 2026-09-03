@@ -1,0 +1,18 @@
+schema: https://schemas.deep-tree-echo.org/dte.subsystem/v1
+organization: dtechorg
+repository: .github
+visibility: private
+purpose: >-
+  Organization profile, governance, contribution standards, issue forms, and reusable workflow entry points.
+future_enterprise_org: dte-governance
+contract_source: dtechorg/echo-platform
+artifact_policy: content-addressed-manifests
+large_binary_policy: external-object-storage
+source_import_policy: preserved-history-under-sources
+license_policy: provisional-private-review
+topics:
+  - deep-tree-echo
+  - governance
+  - community-health
+known_sources:
+  []
